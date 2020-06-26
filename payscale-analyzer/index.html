@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    function payscaleAnalyzer(paylist){
+      var result = null;
+      for (i=0; i<paylist.length; i++){
+        result = Math.max(...paylist) - Math.min(...paylist);
+      }
+      return result;
+    }
+
+  </script>
+
+</body>
+</html>
