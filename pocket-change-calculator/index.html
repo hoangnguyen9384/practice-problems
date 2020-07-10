@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  function pocketChangeCalculator(changeArray, itemCost){
+    var quarters = changeArray[0];
+    var dimes = changeArray[1];
+    var nickels = changeArray[2];
+    var pennies = changeArray[3];
+    var total = (quarters/4)+(dimes/10)+(nickels/20)+(pennies/100);
+    if (total >= itemCost){
+           return true;
+         } else {
+           return false;
+         }
+  }
+
+</script>
+
+
+</body>
+</html>
