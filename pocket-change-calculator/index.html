@@ -13,9 +13,8 @@
     var dimes = changeArray[1];
     var nickels = changeArray[2];
     var pennies = changeArray[3];
-
-    if (quarters >= itemCost && dimes >= itemCost
-         && nickels >= itemCost && pennies >= itemCost){
+    var total = (quarters/4)+(dimes/10)+(nickels/20)+(pennies/100);
+    if (total >= itemCost){
            return true;
          } else {
            return false;
