@@ -8,16 +8,17 @@
 <body>
 
   <script>
-    function checkFactors(array, number){
-      for (var i=0; i<array.length; i++){
-        var num = number/array[i];
-        if(Number.isInteger(num)){
-          return true;
-        } else {
+     function checkFactors(array, number) {
+        var num = 0;
+        for (var i = 0; i < array.length; i++) {
+          num += number % array[i];
+        }
+        if (num > 0) {
           return false;
+        } else {
+          return true;
         }
       }
-    }
   </script>
 
 </body>
