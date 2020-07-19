@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+
+    function sentenceStripper(sentence, charsToStrip) {
+      var splitSentence = sentence.split('');
+      var splitChars = charsToStrip.split('');
+      var sentenceBreakDown = splitSentence.filter((item) => !splitChars.includes(item));
+      var newSentence = sentenceBreakDown.toString().replace(/,/g, '');
+      return newSentence;
+    }
+
+  </script>
+
+</body>
+
+</html>
